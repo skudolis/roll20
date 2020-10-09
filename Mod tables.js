@@ -49,4 +49,4 @@ var prices = {"Skull":{"price":0,"weight":0},
 "Coudes":{"price":0,"weight":0},
 "Vambraces":{"price":0,"weight":0},
 "Kneecops":{"price":0,"weight":0},
-"Greaves":{"price":0,"weight":0}}
+"Greaves":{"price":0,"weight":0},
