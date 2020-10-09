@@ -1,4 +1,4 @@
-var prices = {"Skull":{"price":0,"weight":0},
+var prices = {"Skull, bone":{"price":0,"weight":0},
 "Cap, cloth":{"price":8,"weight":0.4},
 "Cap, leather":{"price":16,"weight":0.8},
 "Cap, quilt":{"price":16,"weight":1.2},
