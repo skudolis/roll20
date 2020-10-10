@@ -348,7 +348,8 @@ var occupational_skills = {
         "Fishing/3",
         "Weatherlore/3",
         "Piloting/2",
-        "Shipwright/2"
+        "Shipwright/2",
+        "Packing/3"
     ],
     "Shaman": [
         "Ritual-Tribal/4",
@@ -380,7 +381,9 @@ var occupational_skills = {
         "RIDING/4",
         "Animalcraft/3",
         "Whip/3",
-        "Woodcraft/2"
+        "Woodcraft/2",
+        "Driving/4",
+        "Packing/3"
     ],
     "Tentmaker": [
         "Textilecraft/3",
@@ -407,7 +410,8 @@ var occupational_skills = {
         "Lockcraft/3",
         "Club/5",
         "Dagger/4",
-        "Acrobatics/2"
+        "Acrobatics/2",
+        "Searching/3"
     ],
     "Timberwright": [
         "Timbercraft/4",
@@ -676,7 +680,8 @@ var occupational_skills = {
         "Spear/5",
         "Sword(Shortsword)/4",
         "Dagger/4",
-        "Shield(Round)/4"
+        "Shield(Round)/4",
+        "Tactics/1"
     ],
     "Feudal Guardsman, Light": [
         "INITIATIVE/5",
@@ -688,7 +693,8 @@ var occupational_skills = {
         "Spear/6",
         "Sword(Shortsword)/5",
         "Dagger/5",
-        "Shield(Round)/5"
+        "Shield(Round)/5",
+        "Tactics/2"
     ],
     "Feudal Guardsman, Heavy": [
         "INITIATIVE/5",
@@ -700,7 +706,8 @@ var occupational_skills = {
         "Spear/6",
         "Sword(Falchion)/5",
         "Dagger/5",
-        "Shield(Round)/5"
+        "Shield(Round)/5",
+        "Tactics/2"
     ],
     "Feudal Yeoman, Shortbow": [
         "INITIATIVE/5",
@@ -712,7 +719,8 @@ var occupational_skills = {
         "Bow(Shortbow)/5",
         "Sword(Falchion)/5",
         "Dagger/5",
-        "Shield(Buckler)/5"
+        "Shield(Buckler)/5",
+        "Tactics/1"
     ],
     "Feudal Yeoman, Longbow": [
         "INITIATIVE/5",
@@ -724,7 +732,8 @@ var occupational_skills = {
         "Bow(Longbow)/5",
         "Sword(Falchion)/5",
         "Dagger/5",
-        "Shield(Buckler)/5"
+        "Shield(Buckler)/5",
+        "Tactics/1"
     ],
     "Feudal Knight, Medium": [
         "INITIATIVE/6",
@@ -739,7 +748,8 @@ var occupational_skills = {
         "Axe(Handaxe)/5",
         "Dagger/5",
         "Shield(Knight)/6",
-        "Dancing/3"
+        "Dancing/3",
+        "Tactics/3"
     ],
     "Feudal Knight, Heavy": [
         "INITIATIVE/6",
@@ -754,7 +764,8 @@ var occupational_skills = {
         "Axe(Handaxe)/5",
         "Dagger/5",
         "Shield(Kite)/6",
-        "Dancing/3"
+        "Dancing/3",
+        "Tactics/3"
     ],
     "Order Infantry, Light": [
         "INITIATIVE/5",
@@ -766,7 +777,8 @@ var occupational_skills = {
         "Spear/6",
         "Sword(Shortsword)/5",
         "Dagger/5",
-        "Shield(Round)/5"
+        "Shield(Round)/5",
+        "Tactics/2"
     ],
     "Order Infantry, Heavy": [
         "INITIATIVE/5",
@@ -778,7 +790,8 @@ var occupational_skills = {
         "Spear/6",
         "Sword(Falchion)/5",
         "Dagger/5",
-        "Shield(Round)/5"
+        "Shield(Round)/5",
+        "Tactics/2"
     ],
     "Order Archer": [
         "INITIATIVE/5",
@@ -790,7 +803,8 @@ var occupational_skills = {
         "Bow(Shortbow)/5",
         "Sword(Shortsword)/5",
         "Dagger/5",
-        "Shield(Buckler)/5"
+        "Shield(Buckler)/5",
+        "Tactics/2"
     ],
     "Order Knight, Medium": [
         "INITIATIVE/6",
@@ -805,7 +819,8 @@ var occupational_skills = {
         "Club(Mace)/5",
         "Dagger/5",
         "Shield(Knight)/6",
-        "Dancing/3"
+        "Dancing/3",
+        "Tactics/3"
     ],
     "Order Knight, Heavy": [
         "INITIATIVE/6",
@@ -820,7 +835,8 @@ var occupational_skills = {
         "Club(Mace)/5",
         "Dagger/5",
         "Shield(Kite)/6",
-        "Dancing/3"
+        "Dancing/3",
+        "Tactics/3"
     ],
     "Imperial Militia": [
         "INITIATIVE/5",
@@ -830,7 +846,7 @@ var occupational_skills = {
         "Physician/2",
         "Weaponcraft/2",
         "Spear/4",
-        "Shield(Round)/4"
+        "Shield(Round)/4"        
     ],
     "Imperial Legionnaire, Light": [
         "INITIATIVE/5",
@@ -842,7 +858,8 @@ var occupational_skills = {
         "Spear/5",
         "Sword(Shortsword)/4",
         "Dagger/4",
-        "Shield(Tower)/5"
+        "Shield(Tower)/5",
+        "Tactics/1"
     ],
     "Imperial Legionnaire, Medium": [
         "INITIATIVE/5",
@@ -854,7 +871,8 @@ var occupational_skills = {
         "Spear/6",
         "Sword(Shortsword)/5",
         "Dagger/4",
-        "Shield(Tower)/5"
+        "Shield(Tower)/5",
+        "Tactics/2"
     ],
     "Imperial Legionnaire, Shortbow": [
         "INITIATIVE/5",
@@ -866,7 +884,8 @@ var occupational_skills = {
         "Bow(Shortbow)/6",
         "Sword(Shortsword)/5",
         "Dagger/5",
-        "Shield(Buckler)/5"
+        "Shield(Buckler)/5",
+        "Tactics/2"
     ],
     "Patrician": [
         "INITIATIVE/6",
@@ -881,7 +900,8 @@ var occupational_skills = {
         "Axe(Handaxe)/5",
         "Dagger/5",
         "Shield(Kite)/6",
-        "Dancing/3"
+        "Dancing/3",
+        "Tactics/3"
     ],
     "Viking Clansman, Unarmored": [
         "INITIATIVE/5",
@@ -906,7 +926,8 @@ var occupational_skills = {
         "Shield(Round)/6",
         "Bow((Shortbow))/5",
         "Dagger(Keltan)/5",
-        "Seamanship/3"
+        "Seamanship/3",
+        "Tactics/1"
     ],
     "Viking Huscarl, Medium Foot": [
         "INITIATIVE/6",
@@ -920,7 +941,8 @@ var occupational_skills = {
         "Dagger(Keltan)/5",
         "Shield(Round)/5",
         "Seamanship/3",
-        "Piloting/2"
+        "Piloting/2",
+        "Tactics/2"
     ],
     "Viking Huscarl, Light Horse": [
         "INITIATIVE/6",
@@ -934,7 +956,8 @@ var occupational_skills = {
         "Sword(Broadsword)/5",
         "Shield(Round)/5",
         "Seamanship/3",
-        "Piloting/2"
+        "Piloting/2",
+        "Tactics/2"
     ],
     "Khuzdul Clansman": [
         "INITIATIVE/5",
@@ -945,7 +968,8 @@ var occupational_skills = {
         "Weaponcraft/2",
         "Spear/6",
         "Axe(Handaxe)/5",
-        "Shield(Round)/5"
+        "Shield(Round)/5",
+        "Tactics/1"
     ],
     "Khuzdul Low Guard": [
         "INITIATIVE/5",
@@ -957,7 +981,8 @@ var occupational_skills = {
         "Spear/6",
         "Axe(Battleaxe)/5",
         "Dagger/5",
-        "Shield(Round)/5"
+        "Shield(Round)/5",
+        "Tactics/2"
     ],
     "Khuzdul High Guard": [
         "INITIATIVE/6",
@@ -969,7 +994,8 @@ var occupational_skills = {
         "Polearm(Poleaxe)/6",
         "Club(Mace)/5",
         "Dagger/5",
-        "Shield(Round)/5"
+        "Shield(Round)/5",
+        "Tactics/3"
     ],
     "Sindarin Ranger, Unarmored": [
         "INITIATIVE/5",
@@ -981,7 +1007,8 @@ var occupational_skills = {
         "Bow(Hartbow)/6",
         "Sword(Longknife)/5",
         "Dagger/5",
-        "Shield(Buckler)/5"
+        "Shield(Buckler)/5",
+        "Tactics/2"
     ],
     "Sindarin Ranger, Light": [
         "INITIATIVE/5",
@@ -993,7 +1020,8 @@ var occupational_skills = {
         "Bow(Hartbow)/6",
         "Sword(Longknife)/5",
         "Dagger/5",
-        "Shield(Buckler)/5"
+        "Shield(Buckler)/5",
+        "Tactics/2"
     ],
     "Sindarin Guardian": [
         "INITIATIVE/5",
@@ -1005,7 +1033,8 @@ var occupational_skills = {
         "Spear/7",
         "Sword(Longknife)/6",
         "Dagger/5",
-        "Shield(Round)/6"
+        "Shield(Round)/6",
+        "Tactics/3"
     ],
     "Sindarin Horsebow": [
         "INITIATIVE/5",
@@ -1020,7 +1049,8 @@ var occupational_skills = {
         "Sword(Longknife)/5",
         "Shield(Knight)/6",
         "Dancing/3",
-        "Musician/2"
+        "Musician/2",
+        "Tactics/2"
     ],
     "Sindarin Knight": [
         "INITIATIVE/6",
@@ -1034,7 +1064,8 @@ var occupational_skills = {
         "Sword(Longknife)/6",
         "Shield(Knight)/6",
         "Dancing/3",
-        "Musician/2"
+        "Musician/2",
+        "Tactics/3"
     ],
     "Shek-Pvar/Lyahvi*": [
         "Lyahvi/2",
