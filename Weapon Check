@@ -33,9 +33,9 @@ if (r.indexOf("Block") == 0) {
       		      if (parseInt(myGet("DOWQ", charid, 0)) == 0) {
 		      if (isnt_bow_attack(wepname, atk)) {
               	      mySet(`${aojn.slice(0, -4)}WQ`, charid, (awq - 0));
-            }
+            	}
+		}
 	}
-
     } else {
         var roll2 = randomInteger(6) + randomInteger(6) + randomInteger(6);
   	    if (roll2 >= (dwq + 3)) {
