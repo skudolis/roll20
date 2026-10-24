@@ -3788,33 +3788,6 @@ function out(charid) {
 	});
 	mySet("TEXTAREA_SHEET", charid, logout)
 }
-function invin(charid) {
-	
-	var atts = findObjs({
-		_characterid: charid,
-		_type: "attribute",
-		name: "TEXTAREA_SHEET"
-	});
-
-	if (atts[0]) {
-		log("=================================")
-		ojv = atts[0].get('current');
-		if (ojv.length > 3) {
-			ojv = ojv.replace(/\t/g, "")
-			for (i = 0; i < 5; i++) {
-				ojv = ojv.replace(/  /g, " ")
-			}
-
-			ojv = ojv.replace(/\n /g, "\n");
-			lns = ojv.split("\n");
-
-			for(xi=0;xi<lns.length;xi++) {
-				if (lns[xi].length > 2) { addItem(charid, lns[xi]); }
-			}
-		}
-	}
-}
-
 
 function replaceArg(acom, msg) {
 	var args = msg.content.split(" ");
@@ -3831,7 +3804,6 @@ function replaceArg(acom, msg) {
 	return acom;
 
 }
-
 
 function handle_table(args, msg) {
 	var scdata = findObjs({
