@@ -197,7 +197,6 @@ var scdata = findObjs({
 		scdata.get("notes", function(scda) {
 			var t_in = JSON.parse(scda.substring(5, scda.indexOf('</pre>')));
 			tables.occupational_skills = t_in.occupational_skills;
-			tables.occupation_time = t_in.occupation_time;
 			//initializeTables(pid);
 		    if (trace) { log(`API table loaded`) }
 		});
@@ -208,9 +207,7 @@ var scdata = findObjs({
             inplayerjournals: "all",
             archived: false
 	    });
-		var ostr = `\"occupational_skills\": ${JSON.stringify(tables['occupational_skills'],null,2)},\n\n`;
-
-		ostr += `\"occupation_time\": ${JSON.stringify(tables['occupation_time'],null,2)}\n`
+		var ostr = `\"occupational_skills\": ${JSON.stringify(tables['occupational_skills'],null,2)}\n`;
 		
 	    handout.set('notes', `<pre>{\n${ostr}\n}</pre>`);
 	    handout.set('gmnotes', 'GM notes.');
@@ -2788,154 +2785,7 @@ var tables = {
         "Runecraft/3",
         "Tarotry/3"
     ]
-},
-
-
-////////////////////////////////////////////////////////////
-
-
-///////////////////////////////////
-
-
-
-
-
-
-
-///////////////////////////////
-
-
-"occupation_time": {
-    "Alchemist": "7",
-    "Animal Trainer": "3",
-    "Apothecary": "6",
-    "Astrologer": "4",
-    "Baliff": "8",
-    "Beggar": "1",
-    "Cartographer/Artist": "5",
-    "Chandler": "4",
-    "Charcoaler": "3",
-    "Chieftan": "15",
-    "Clothier": "6",
-    "Cook/Servant": "3",
-    "Courtesan": "3",
-    "Embalmer": "7",
-    "Farmer": "4",
-    "Fisherman": "5",
-    "Gladiator": "4",
-    "Glassworker": "7",
-    "Harper/Skald": "7",
-    "Herald": "12",
-    "Herdsman": "2",
-    "Hideworker": "5",
-    "Hunter/Trapper": "5",
-    "Innkeeper": "5",
-    "Jeweler": "7",
-    "Laborer/Longshoreman": "1",
-    "Lady": "7",
-    "Lexigrapher": "5",
-    "Litigant": "7",
-    "Locksmith": "6",
-    "Mason": "7",
-    "Mercantyler": "6",
-    "Metalsmith": "6",
-    "Miller/Millwright": "6",
-    "Miner": "6",
-    "Ostler": "5",
-    "Perfumer": "6",
-    "Physician": "7",
-    "Pilot": "9",
-    "Potter": "6",
-    "Prostitute/Pimp": "1",
-    "Ratter": "3",
-    "Sage/Tutor": "5",
-    "Salter": "4",
-    "Servant": "1",
-    "Scribe": "5",
-    "Seaman": "5",
-    "Shaman": "8",
-    "Shipwright": "7",
-    "Teamster": "2",
-    "Tentmaker": "5",
-    "Thatcher": "4",
-    "Thespian": "7",
-    "Thief": "3",
-    "Timberwright": "6",
-    "Toymaker": "5",
-    "Weaponcrafter": "7",
-    "Woodcrafter": "7",
-    "Cleric/Agrik": "9",
-    "Cleric/Halea": "9",
-    "Cleric/Ilvir": "9",
-    "Cleric/Larani": "9",
-    "Cleric/Morgath": "9",
-    "Cleric/Naveh": "9",
-    "Cleric/Peoni": "9",
-    "Cleric/Sarajin": "9",
-    "Cleric/Save-K'nor": "9",
-    "Cleric/Siem": "9",
-    "Feudal Militia": "4",
-    "Feudal Yeoman, Foot": "5",
-    "Feudal Guardsman, Light": "5",
-    "Feudal Guardsman, Heavy": "5",
-    "Feudal Yeoman, Shortbow": "6",
-    "Feudal Yeoman, Longbow": "6",
-    "Feudal Knight, Medium": "7",
-    "Feudal Knight, Heavy": "7",
-    "Order Infantry, Light": "5",
-    "Order Infantry, Heavy": "5",
-    "Order Archer": "6",
-    "Order Knight, Medium": "7",
-    "Order Knight, Heavy": "7",
-    "Imperial Militia": "5",
-    "Imperial Legionnaire, Light": "5",
-    "Imperial Legionnaire, Medium": "5",
-    "Imperial Legionnaire, Shortbow": "6",
-    "Patrician": "7",
-    "Viking Clansman, Unarmored": "4",
-    "Viking Clansman, Light": "5",
-    "Viking Huscarl, Medium Foot": "6",
-    "Viking Huscarl, Light Horse": "6",
-    "Khuzdul Clansman": "15",
-    "Khuzdul Low Guard": "20",
-    "Khuzdul High Guard": "30",
-    "Sindarin Ranger, Unarmored": "10",
-    "Sindarin Ranger, Light": "11",
-    "Sindarin Guardian": "12",
-    "Sindarin Horsebow": "15",
-    "Sindarin Knight": "20",
-    "Shek-Pvar/Lyahvi*": "7",
-    "Shek-Pvar/Lyahvi**": "7",
-    "Shek-Pvar/Lyahvi***": "7",
-    "Shek-Pvar/Lyahvi****": "7",
-    "Shek-Pvar/Lyahvi*****": "7",
-    "Shek-Pvar/Peleahn*": "7",
-    "Shek-Pvar/Peleahn**": "7",
-    "Shek-Pvar/Peleahn***": "7",
-    "Shek-Pvar/Peleahn****": "7",
-    "Shek-Pvar/Peleahn*****": "7",
-    "Shek-Pvar/Jmorvi*": "7",
-    "Shek-Pvar/Jmorvi**": "7",
-    "Shek-Pvar/Jmorvi***": "7",
-    "Shek-Pvar/Jmorvi****": "7",
-    "Shek-Pvar/Jmorvi*****": "7",
-    "Shek-Pvar/Fyvria*": "7",
-    "Shek-Pvar/Fyvria**": "7",
-    "Shek-Pvar/Fyvria***": "7",
-    "Shek-Pvar/Fyvria****": "7",
-    "Shek-Pvar/Fyvria*****": "7",
-    "Shek-Pvar/Odivshe*": "7",
-    "Shek-Pvar/Odivshe**": "7",
-    "Shek-Pvar/Odivshe***": "7",
-    "Shek-Pvar/Odivshe****": "7",
-    "Shek-Pvar/Odivshe*****": "7",
-    "Shek-Pvar/Savorya*": "7",
-    "Shek-Pvar/Savorya**": "7",
-    "Shek-Pvar/Savorya***": "7",
-    "Shek-Pvar/Savorya****": "7",
-    "Shek-Pvar/Savorya*****": "7"
-}}
-
+}},
 
 /**
  * Command dispatcher
