@@ -255,8 +255,7 @@ var tables = {
     "testlist":"?{the list|Strength,@{STR}|Dexterity,@{DEX}|Aglility,@{AGL}|Will,@{WIL}|Endurance,@{COMBAT_ENDURANCE}|Intelligence,@{INT}|Aura,@{AUR}|Stamina,@{STA}|Hearing,@{HRG}|Vision,@{EYE}|Smell,@{SML}|Surprise,@{INITIATIVE_SB}|Fright Check,@{WIL},@{AWARENESS_ML}}",
     "listnames":"?{Roll Name|Strength|Dexterity|Aglility|Will|Endurance|Intelligence|Aura|Stamina|Hearing|Vision|Smell|Surprise|Fright Check|Awareness}",
     "melee-Weapons":"?{Melee Weapon|}",
-    "missile-Weapons":"?{Missile Weapon|}",
-    "Add-Inventory-List":"!invin @{character_id}"
+    "missile-Weapons":"?{Missile Weapon|}"
 },
 
 
