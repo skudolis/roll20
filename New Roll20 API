@@ -1465,11 +1465,6 @@ var dispatch_table = {
         "re_syntax": /^!tokemove.*$/,
         "hr_syntax": "Shows token move distance"
     },
-    "!out": {
-        "action": (args, msg) => { handle_out(args, msg); },
-        "re_syntax": /^!out.*$/,
-        "hr_syntax": "!out token_id<br/> outputs character data to log"
-    },
     "!attack_melee_table": {
         "action": (args, msg) => { handle_tables.attack_melee_table(args, msg); },
         "re_syntax": /^!attack_melee_table (block|counterstrike|dodge|ignore) [1-4] [1-4]$/,
@@ -2612,12 +2607,6 @@ function handle_loc(args, msg) {
 function handle_attack_melee_table(args, msg) {
 	if (trace) { log(`handle_attack_melee_table(${args},${msg.content})`) }
 	sendChat(msg.who, "Melee Attack Result<br/>" + tables.attack_melee[args[1]][args[2]][args[3]] + "<br/>");
-}
-
-function handle_out(args, msg) {
-	if (trace) { log(`handle_out(${args},${msg.content})`) }
-	var g = getObj(msg.selected[0]['_type'], msg.selected[0]['_id']);
-	out(g.get("represents"));
 }
 
 /**
