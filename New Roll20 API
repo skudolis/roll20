@@ -2785,7 +2785,7 @@ var tables = {
         "Runecraft/3",
         "Tarotry/3"
     ]
-}},
+}};
 
 /**
  * Command dispatcher
