@@ -189,31 +189,6 @@ function generate_tables(pid=0) {
 		//initializeTables(pid);
 		if (trace) { log(`API table added`) }
 	}
-var scdata = findObjs({
-		name: "API_occupation",
-		_type: "handout",
-	})[0];
-	if (scdata) {
-		scdata.get("notes", function(scda) {
-			var t_in = JSON.parse(scda.substring(5, scda.indexOf('</pre>')));
-			tables.occupational_skills = t_in.occupational_skills;
-			//initializeTables(pid);
-		    if (trace) { log(`API table loaded`) }
-		});
-
-	} else {
-	    var handout = createObj("handout", {
-            name: "API_occupation",
-            inplayerjournals: "all",
-            archived: false
-	    });
-		var ostr = `\"occupational_skills\": ${JSON.stringify(tables['occupational_skills'],null,2)}\n`;
-		
-	    handout.set('notes', `<pre>{\n${ostr}\n}</pre>`);
-	    handout.set('gmnotes', 'GM notes.');
-		//initializeTables(pid);
-		if (trace) { log(`API table added`) }
-	}
 	var scdata = findObjs({
 		name: "API_prices",
 		_type: "handout",
