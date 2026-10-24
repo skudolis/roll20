@@ -1452,13 +1452,7 @@ var dispatch_table = {
         "hr_syntax": "!invin character_id<br/>Inputs character inventory in HÃ¢rnMaster Character Utility text format from character note."
 
     },
-    "!xin": {
-        "action": (args, msg) => { handle_xin(args, msg); },
-        "re_syntax": /^!xin( [-_a-zA-Z0-9]{20})?$/,
-        "hr_syntax": "!xin [character_id]<br/>Imports a character in HÃ¢rnMaster Character Utility text format from the character note."
-
-    },
-    "!ca": {
+        "!ca": {
         "action": (args, msg) => { handle_ca(args, msg); },
         "re_syntax": /^!ca( [-_a-zA-Z0-9]{20})?$/,
         "hr_syntax": "!ca [character_id]<br/>Calculates armor values at hit locations."
