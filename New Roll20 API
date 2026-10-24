@@ -3986,27 +3986,6 @@ function handle_itemlist(args, msg) {
 	generate_tables(msg.playerid);
 }
 
-/**
- * Populates the character skills with occupation appropriate skills (and starting ML?)
- * @param {Message} msg the message representing the command, with arguments separated by spaces
- */
-function handle_occupation(args, msg) {
-	if (trace) { log(`handle_occupation(${args},${msg.content})`) }
-	var char = getObj("character", args[1]);
-	if (char) {
-		log(msg.content.slice(33));
-		var occ = myGet('OCCUPATION', char.id, "Farmer");
-		if (occ in tables.occupational_skills) {
-			_.each(tables.occupational_skills[occ], function(skl) {
-				sk = skl.split("/");
-				skn = findSkill(char, sk[0]).slice(0, -4);
-				log(skn);
-				mySet(skn + "ML", char.id, sk[1]);
-
-			});
-		}
-	}
-}
 function handle_gmrand(args, msg) {
 	if (trace) { log(`handle_gmrand(${args},${msg.content})`) }
 	if (!msg.selected) { return; }
