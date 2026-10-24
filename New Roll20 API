@@ -2690,28 +2690,6 @@ function handle_ca(args, msg) {
 }
 
 /**
- * Import a character generated with HÃ¢rnMaster Character Utility from https://www.lythia.com/game_aides/harnchar/
- * @param {Message} msg the message representing the command, with arguments separated by spaces
- */
-function handle_xin(args, msg) {
-	if (trace) { log(`handle_xin(${args},${msg.content})`) }
-	if (args.length > 1) {
-		log(args[1]);
-		xin(args[1]);
-	} else if (msg.selected) {
-		var g = getObj(msg.selected[0]['_type'], msg.selected[0]['_id']);
-
-		if (g.get("represents")) {
-			xin(g.get("represents"));
-		}
-
-	} else {
-		log("Please select character");
-	}
-}
-
-
-/**
  * ?
  * @param {Message} msg the message representing the command, with arguments separated by spaces
  */
