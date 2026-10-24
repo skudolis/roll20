@@ -1893,18 +1893,6 @@ if (r.indexOf("Block") == 0) {
 		var rolldesc = `${toke.get('name')} ${def[1]}s with a ${defwepname}`
 	}
 
-	//log crits
-
-	if (asuc == "CS") {
-		charLog(charid, ": Attack CS " + wepname, config.realtime, config.gametime)
-	} else if (asuc == "CF") {
-		charLog(charid, ": Attack CF " + wepname, config.realtime, config.gametime)
-	}
-	if (dsuc == "CS") {
-		charLog(defcharid, ": Defend CS " + defwepname, config.realtime, config.gametime)
-	} else if (dsuc == "CF") {
-		charLog(defcharid, ": Defend CF " + defwepname, config.realtime, config.gametime)
-	}
 
 	sendChat(msg.who, defendTemplate(config.defend_template,
 		rolldesc,
@@ -1915,8 +1903,6 @@ if (r.indexOf("Block") == 0) {
 		labelMaker(`Target: ${deml.total}`, deml.targstr, null, 1.3),
 		dis, ares, dres, r));
 }
-
-
 
 
 
