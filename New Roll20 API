@@ -1446,13 +1446,7 @@ var dispatch_table = {
         "re_syntax": /^!defend (ignore|dodge|block|counterstrike) (#zero|[-+]?[0-9]+) WeaponName:.*$/,
         "hr_syntax": "!defend (block mod WeaponName: weapon_name|dodge mod|ignore|counterstrike mod WeaponName: weapon_name)<br/>defends against an attack"
     },
-    "!invin": {
-        "action": (args, msg) => { handle_invin(args, msg); },
-        "re_syntax": /^!invin [-_a-zA-Z0-9]{20}$/,
-        "hr_syntax": "!invin character_id<br/>Inputs character inventory in HÃ¢rnMaster Character Utility text format from character note."
-
-    },
-        "!ca": {
+    "!ca": {
         "action": (args, msg) => { handle_ca(args, msg); },
         "re_syntax": /^!ca( [-_a-zA-Z0-9]{20})?$/,
         "hr_syntax": "!ca [character_id]<br/>Calculates armor values at hit locations."
@@ -2683,25 +2677,6 @@ function handle_ca(args, msg) {
 
 		if (g.get("represents")) {
 			calcArmor(g.get("represents"));
-		}
-	} else {
-		log("Please select character");
-	}
-}
-
-/**
- * ?
- * @param {Message} msg the message representing the command, with arguments separated by spaces
- */
-function handle_invin(args, msg) {
-	if (trace) { log(`handle_invin(${args},${msg.content})`) }
-	if (args.length > 1) {
-		//log(args[1]);
-		invin(args[1]);
-	} else if (msg.selected) {
-		var g = getObj(msg.selected[0]['_type'], msg.selected[0]['_id']);
-		if (g.get("represents")) {
-			invin(g.get("represents"));
 		}
 	} else {
 		log("Please select character");
