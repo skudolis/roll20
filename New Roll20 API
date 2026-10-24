@@ -2824,12 +2824,7 @@ var dispatch_table = {
         "re_syntax": /^!itemlist$/,
         "hr_syntax": "!itemlist<br/>Prepares the item lists for use by other macros."
     },
-    "!occupation": {
-        "action": (args, msg) => { handle_occupation(args, msg); },
-        "re_syntax": /^!occupation [-_a-zA-Z0-9]{20}$/,
-        "hr_syntax": "!occupation character_id<br/>Adds the occupation skills to the character."
-    },
-    "!table": {
+       "!table": {
         "action": (args, msg) => { handle_table(args, msg); },
         "re_syntax": /^!table .+$/,
         "hr_syntax": "!table [[inline roll]] [[inline roll]] character id<br/>Rolls a value on a specially formatted handout."
