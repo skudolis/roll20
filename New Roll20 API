@@ -1768,15 +1768,21 @@ if (r.indexOf("Block") == 0) {
 			var die2 = randomInteger(6);
 			var die3 = randomInteger(6);
 
+log("WQ TEST - Original dice: " + die1 + ", " + die2 + ", " + die3);
+
 		if (die1 === 6 && (die2 >= 5 || die3 >= 5)) {
    			die1 = randomInteger(6);
+log("WQ TEST - Rerolled die1 to: " + die1);
           } else if (die2 === 6 && (die1 >= 5 || die3 >= 5)) {
             die2 = randomInteger(6);
+log("WQ TEST - Rerolled die2 to: " + die2);
           } else if (die3 === 6 && (die1 >= 5 || die2 >= 5)) {
             die3 = randomInteger(6);
+log("WQ TEST - Rerolled die3 to: " + die3);
           }
 
 var roll1 = die1 + die2 + die3;
+log("WQ TEST - Final dice: " + die1 + ", " + die2 + ", " + die3 + " = " + roll1);
 
 		    dres = "Roll: " + roll1 + " - WQ: " + dwq;
 		    if (roll1 >= (dwq + 3)) {
