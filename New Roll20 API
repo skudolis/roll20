@@ -1804,7 +1804,20 @@ var roll1 = die1 + die2 + die3;
 		        }
 		        
 		    } else {
-		        var roll2 = randomInteger(6) + randomInteger(6) + randomInteger(6);
+		    var die1 = randomInteger(6);
+			var die2 = randomInteger(6);
+			var die3 = randomInteger(6);
+
+		if (die1 === 6 && (die2 >= 5 || die3 >= 5)) {
+   			die1 = randomInteger(6);
+          } else if (die2 === 6 && (die1 >= 5 || die3 >= 5)) {
+            die2 = randomInteger(6);
+          } else if (die3 === 6 && (die1 >= 5 || die2 >= 5)) {
+            die3 = randomInteger(6);
+          }
+
+var roll2 = die1 + die2 + die3;
+
 		        ares = "Roll: "+ roll2 + " - WQ: " + awq;
     		    if (roll2 >= (awq + 3)) {
     		        ares = ares + "<br>Attacker’s Weapon Breaks!<br>";
@@ -1835,7 +1848,20 @@ var roll1 = die1 + die2 + die3;
     		    }
 		    }
 		} else {
-		    var roll1 = randomInteger(6) + randomInteger(6) + randomInteger(6);
+		    var die1 = randomInteger(6);
+			var die2 = randomInteger(6);
+			var die3 = randomInteger(6);
+
+		if (die1 === 6 && (die2 >= 5 || die3 >= 5)) {
+   			die1 = randomInteger(6);
+          } else if (die2 === 6 && (die1 >= 5 || die3 >= 5)) {
+            die2 = randomInteger(6);
+          } else if (die3 === 6 && (die1 >= 5 || die2 >= 5)) {
+            die3 = randomInteger(6);
+          }
+
+var roll1 = die1 + die2 + die3;
+
 		    ares = "Roll: "+ roll1 + " - WQ: " + awq;
 		    if (roll1 >= (awq + 3)) {
 		        ares = ares + "<br>Attacker’s Weapon Breaks!<br>";
@@ -1864,7 +1890,21 @@ var roll1 = die1 + die2 + die3;
 		        }
 		        
 		    } else {
-		        var roll2 = randomInteger(6) + randomInteger(6) + randomInteger(6);
+		    var die1 = randomInteger(6);
+			var die2 = randomInteger(6);
+			var die3 = randomInteger(6);
+
+		if (die1 === 6 && (die2 >= 5 || die3 >= 5)) {
+   			die1 = randomInteger(6);
+          } else if (die2 === 6 && (die1 >= 5 || die3 >= 5)) {
+            die2 = randomInteger(6);
+          } else if (die3 === 6 && (die1 >= 5 || die2 >= 5)) {
+            die3 = randomInteger(6);
+          }
+
+var roll2 = die1 + die2 + die3;
+
+
 		        dres = "Roll: "+ roll2 + " - WQ: " + dwq;
     		    if (roll2 >= (dwq + 3)) {
     		        dres = dres + "<br>Defender’s Weapon Breaks!<br>";
