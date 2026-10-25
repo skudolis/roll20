@@ -3432,12 +3432,10 @@ function findSkill(char, skillname) {
 			ojv = ob1.get('current')
 
 			if (ojn.indexOf("SKILL_NAME") !== -1) {
-				_.each(_.keys(tables.skilllist), function(obj) {
-					if ((ojv.indexOf(obj) !== -1) && (skillname.indexOf(obj) !== -1)) {
-						nameout = ojn;
-					}
-				});
-			}
+    if (ojv.trim().toUpperCase() === skillname.trim().toUpperCase()) {
+        nameout = ojn;
+    }
+}
 		});
 	}
 	if (nameout == "False") {
