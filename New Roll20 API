@@ -1764,7 +1764,20 @@ if (r.indexOf("Block") == 0) {
 		log("Attacker WQ: "+ awq );
 		log("Defender WQ: "+ dwq );
 		if (dwq < awq) {
-		    var roll1 = randomInteger(6) + randomInteger(6) + randomInteger(6);
+		    var die1 = randomInteger(6);
+			var die2 = randomInteger(6);
+			var die3 = randomInteger(6);
+
+		if (die1 === 6 && (die2 >= 5 || die3 >= 5)) {
+   			die1 = randomInteger(6);
+          } else if (die2 === 6 && (die1 >= 5 || die3 >= 5)) {
+            die2 = randomInteger(6);
+          } else if (die3 === 6 && (die1 >= 5 || die2 >= 5)) {
+            die3 = randomInteger(6);
+          }
+
+var roll1 = die1 + die2 + die3;
+
 		    dres = "Roll: " + roll1 + " - WQ: " + dwq;
 		    if (roll1 >= (dwq + 3)) {
 		        dres = dres + "<br>Defender’s Weapon Breaks!<br>";
